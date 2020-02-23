@@ -50,6 +50,7 @@ var StompServer = function (config) {
   this.socket = new protocolAdapter[this.conf.protocol]({
       server: this.conf.server,
       path: this.conf.path,
+      sockjs_url: this.conf.sockjs_url,
       perMessageDeflate: false
     });
   /**
